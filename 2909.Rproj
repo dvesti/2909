@@ -10,9 +10,16 @@ NumSpacesForTab: 2
 Encoding: UTF-8
 
 RnwWeave: knitr
+<<<<<<< HEAD
 LaTeX: XeLaTeX
 
 AutoAppendNewline: Yes
 StripTrailingWhitespace: Yes
 
 BuildType: Website
+=======
+LaTeX: pdfLaTeX
+
+AutoAppendNewline: Yes
+StripTrailingWhitespace: Yes
+>>>>>>> 6a2d1bec4dce6f54d34bd245e78beb1a4a77aeb2
