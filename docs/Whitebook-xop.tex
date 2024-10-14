@@ -20,8 +20,8 @@
 \usepackage{lmodern}
 \ifPDFTeX\else
   % xetex/luatex font selection
-    \setmainfont[]{AcademyTT}
-    \setmonofont[Scale=0.7]{Courier New}
+  \setmainfont[]{Georgia}
+  \setmonofont[Scale=0.7]{Courier New}
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -116,7 +116,7 @@
 \babelprovide[main,import]{russian}
 \ifPDFTeX
 \else
-\babelfont{rm}[]{AcademyTT}
+\babelfont{rm}[]{Georgia}
 \fi
 % get rid of language-specific shorthands (see #6817):
 \let\LanguageShortHands\languageshorthands
@@ -124,12 +124,13 @@
 \usepackage{booktabs}
 \usepackage{indentfirst}
 \setlength\parindent{12.7mm}
+\pagestyle{plain}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[]{natbib}
 \bibliographystyle{plainnat}
-\usepackage{bookmark}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
@@ -141,7 +142,7 @@
 
 \title{Белая книга 2909}
 \author{Владимир Вологодский}
-\date{2024-03-15}
+\date{2023-10-04}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[chapter]
@@ -178,12 +179,8 @@
 
 \emph{\textbf{За день --- 110 км. Ок --- 2169 км}}
 
-Eesti: Ä Ü ü ä Õ õ ö Ö
-
-Дореформенные: ђ Ђ ї Ї
-
 Здесь я напишу Введение или Пролог, или Аннотацию
-Потом добавлю отступ --- Красной строки для ПДФ-файл (уже добавил)
+Потом добавлю отступ -- Красной строки для ПДФ-файл (уже добавил)
 
 Lorem Ipsum - это текст-``рыба'', часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной ``рыбой'' для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
 
