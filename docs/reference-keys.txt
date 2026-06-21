@@ -1,8 +1,4 @@
-fig:nice-fig
-tab:nice-tab
-eq:binom
-thm:tri
-about
+url-your-book-url-like-httpsbookdown.orgyihuibookdown
 как-сделать
 делаем-книгу
 предпросмотр
